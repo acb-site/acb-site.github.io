@@ -1,3 +1,7 @@
+body {
+    max-width: 1800px;
+    margin: 0 auto; /* This centers the content horizontally within the maximum width */
+}
 /* Reset some default styles */
 * {
   margin: 0;
