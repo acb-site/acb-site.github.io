@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the top navigation bar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles for the hero section */
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Styles for the section with three boxes */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.box {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Styles for the about me section */
+.about {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-text {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Styles for the section with three boxes */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.service-box {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Styles for the section with ten boxes */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+
+.portfolio-box {
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Styles for the footer section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
