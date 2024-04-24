@@ -1,12 +1,13 @@
-body {
-    max-width: 1800px;
-    margin: 0 auto; /* This centers the content horizontally within the maximum width */
-}
 /* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.body-container {
+    max-width: 1800px;
+    margin: 0 auto; /* This centers the content horizontally within the maximum width */
 }
 
 /* Styles for the top navigation bar */
