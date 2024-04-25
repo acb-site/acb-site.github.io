@@ -125,7 +125,7 @@
 /* Styles for the section with ten boxes */
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width based on available space */
   grid-gap: 20px;
   padding: 50px 0;
 }
