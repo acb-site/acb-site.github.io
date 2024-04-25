@@ -84,7 +84,7 @@
 
 /* Styles for the about me section */
 .about {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 50px 0;
 }
 
@@ -110,11 +110,16 @@
   padding: 50px 0;
 }
 
-.service-box {
+.partner-box {
   width: 30%;
   background-color: #f4f4f4;
   padding: 30px;
   text-align: center;
+}
+
+.partner-box img {
+  max-width: 100%; /* Ensure the image scales within its container */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 /* Styles for the section with ten boxes */
@@ -133,8 +138,8 @@
 
 /* Styles for the footer section */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   text-align: center;
   padding: 20px 0;
 }
