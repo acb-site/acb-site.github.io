@@ -13,6 +13,23 @@
     margin: 0 auto; /* This centers the content horizontally within the maximum width */
 }
 
+/* Styles for common compontents */
+.centered-textblock {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.centered-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.centered-text p {
+  font-size: 18px;
+}
+
+
 /* Styles for the top navigation bar */
 .navbar {
   background-color: #333;
@@ -86,8 +103,8 @@
   border-radius: 50%;
 }
 
-/* Styles for the section with three boxes */
-.services {
+/* Styles for the partners section with three boxes */
+.partners {
   display: flex;
   justify-content: space-around;
   padding: 50px 0;
