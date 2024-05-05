@@ -11,99 +11,387 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staging | Home Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-code-stitch.css">
+<script type="text/javascript" src="js/code-stitch.js"></script>
 </head>
-<body class="body-container">
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZR4K52"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Top Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Better Marketing Online</h1>
-      <p>Consulting, Recommendations, Assistance & Training</p>
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a> -->
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
     </div>
-  </section>
+</header>
+          
+<!-- ============================================ -->
+<!--                  Services - Hero                    -->
+<!-- ============================================ -->
 
-  <!-- Section with Three Boxes -->
-  <section class="features">
-    <div class="box">Digital Marketing
-      <img src="https://acb-site.github.io/case.svg" alt="briefcase icon">
+<section id="services-448">
+    <div class="cs-container">
+        <div class="cs-content">
+        <!--    <span class="cs-topper">Services</span>   -->
+            <h2 class="cs-title">Better Marketing Online</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/tree.svg" alt="icon" width="70" height="70">
+                    </picture>
+                    <h3 class="cs-h3">Digital Marketing</h3>
+                    <p class="cs-item-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaf.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaf.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaf.jpg" alt="leaf" width="345" height="428">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/truck.svg" alt="icon" width="70" height="70">
+                    </picture>
+                    <h3 class="cs-h3">Analytics & Reporting</h3>
+                    <p class="cs-item-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/grass.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/grass.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/grass.jpg" alt="grass" width="345" height="428">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/user.svg" alt="icon" width="70" height="70">
+                    </picture>
+                    <h3 class="cs-h3">Cost & Conversion Optimization</h3>
+                    <p class="cs-item-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaves.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaves.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/leaves.jpg" alt="leaves" width="345" height="428">
+                </picture>
+            </li>
+        </ul>
     </div>
-    <div class="box">Analytics & Reporting
-      <img src="https://acb-site.github.io/pie.svg" alt="pie icon">
+</section>
+             
+<!-- ============================================ -->
+<!--                     Stats - About                    -->
+<!-- ============================================ -->
+
+<section id="stats-1687">
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)"
+                        srcset="https://acb-site.github.io/headshot.png">
+                <source media="(min-width: 601px)"
+                        srcset="https://acb-site.github.io/headshot.png">
+                <img loading="lazy" decoding="async"
+                        src="https://acb-site.github.io/headshot.png"
+                        alt="headshot" width="500" height="552">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">About</span>
+                <h2 class="cs-title">Adam Brougher</h2>
+                <p class="cs-text">
+                    A marketing expert in the San Francisco Bay Area since 2011. I started with fiber & microwave networks; then moved on to startup technology services, web development & data analysis.
+                </p>
+                <a class="cs-button-solid" href="">View All Courses</a>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <h3 class="cs-h3">Projects</h3>
+                <span class="cs-number">100+</span>
+                <img class="cs-graphic"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo-white.svg"
+                        alt="graphic" height="171" width="171" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Hours Billed</h3>
+                <span class="cs-number">10K+</span>
+                <img class="cs-graphic"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo-white.svg"
+                        alt="graphic" height="171" width="171" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">FM Broadcasts</h3>
+                <span class="cs-number">33</span>
+                <img class="cs-graphic"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo-white.svg"
+                        alt="graphic" height="171" width="171" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Driver Rating</h3>
+                <span class="cs-number">4.9</span>
+                <img class="cs-graphic"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo-white.svg"
+                        alt="graphic" height="171" width="171" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+        </ul>
     </div>
-    <div class="box">Cost & Conversion Optimization
-      <img src="https://acb-site.github.io/gears.svg" alt="gears icon">
+</section>
+                                              
+<!-- ============================================ -->
+<!--                  Services - Partners                    -->
+<!-- ============================================ -->
+
+<section id="services-1121">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-yellow1.svg" alt="icon" width="48" height="48">
+                    <!--If you want to remove this background shape, add a background color to the cs-image-group so it will look good. Otherwise remove the height an width from that group so there's no extra space around the icon-->
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/grey-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Alkalyne</h2>
+                    <p class="cs-item-text">
+                        We help companies develop powerful corporate social responsibility
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-yellow2.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/grey-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Monkey Byte</h2>
+                    <p class="cs-item-text">
+                        We help companies develop powerful corporate social responsibility
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-yellow3.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/grey-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">RSO</h2>
+                    <p class="cs-item-text">
+                        We help companies develop powerful corporate social responsibility
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
-  </section>
+    <!--SVG Waves-->
+    <img class="cs-waves" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-waves.svg" alt="waves" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="616">
+</section>
+                         
+<!-- ============================================ -->
+<!--                   Gallery - Projects by Industry                    -->
+<!-- ============================================ -->
 
-  <!-- About Me Section -->
-  <section class="about">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Adam Brougher</h2>
-        <p>A marketing expert in the San Francisco Bay Area since 2011. I started with fiber & microwave networks; then moved on to startup technology services, web development & data analysis.</p>
-      </div>
-      <div class="about-photo">
-        <img src="https://acb-site.github.io/headshot.png" alt="John Doe">
-      </div>
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Service</span>
+            <h2 class="cs-title">Projects by Industry</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-image-group">
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 3 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house3-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg" alt="modern home at night" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 4 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 5 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg" alt="appliance" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 6 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 7 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 8 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6-m.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">View Full Gallery</a>
     </div>
-  </section>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
 
-  <!-- Partners Section with Three Boxes -->
-  <section class="centered-textblock">
-    <div class="centered-text">
-      <h1>Partners</h1>
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg" alt="logo" width="240" height="32">
+            </a>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:123-456 7890">(123) 456 7890</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@codestitch.com">info@codestitch.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">123 Avenue Street<br> Oak Harbor, WA 98101</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Opening Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                Tuesday, Thursday, Friday: 9am-6pm
+            </li>
+            <li class="cs-nav-li">
+                ​(closed for lunch 12pm-2pm)
+            </li>
+        </ul>
     </div>
-  </section>
-
-  <section class="partners">
-    <div class="partner-box">Alkalyne<br>Solutions<br><br>
-          <img src="https://acb-site.github.io/alkalyne-solutions-logo.svg" alt="alkalyne-logo"></div>
-    <div class="partner-box">Monkey Byte Development<br><br>
-          <img src="https://acb-site.github.io/monkeybyte-logo-400x400.png" alt="monkeybyte-logo"></div>
-    <div class="partner-box">RSO<br>Consulting<br><br>
-          <img src="https://acb-site.github.io/rso-consulting-logo.svg" alt="rso-logo"></div>
-  </section>
-
-  <!-- Section with Ten Boxes -->
-    <section class="centered-textblock">
-    <div class="centered-text">
-      <h1>Projects By Industry</h1>
-    </div>
-  </section>
-  <section class="portfolio">
-    <!-- Ten portfolio items here -->
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <!-- Repeat for 10 items -->
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    <div class="portfolio-box">Portfolio Item 1</div>
-    </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <p>2024 My Portfolio. All Rights Reserved.</p>
-  </footer>
-
+</footer>
+                                            
+                                
 </body>
-</html>
