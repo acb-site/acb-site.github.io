@@ -754,14 +754,6 @@ body {
     top: 0;
     left: 0;
   }
-  #stats-1687 .cs-picture-headshot img {
-    width: 79%;
-    height: 79%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   #stats-1687 .cs-card-group {
     list-style: none;
     margin: 0;
