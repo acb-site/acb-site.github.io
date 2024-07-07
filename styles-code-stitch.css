@@ -754,6 +754,26 @@ body {
     top: 0;
     left: 0;
   }
+    #stats-1687 .cs-picture-headshot {
+    width: 100%;
+    max-width: 39.375rem;
+    height: auto;
+    /* 400px - 600px */
+    min-height: clamp(25rem, 68vw, 37.5rem);
+    margin: 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+    align-self: stretch;
+  }
+    #stats-1687 .cs-picture-headshot img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   #stats-1687 .cs-card-group {
     list-style: none;
     margin: 0;
@@ -821,6 +841,10 @@ body {
     align-self: center;
   }
   #stats-1687 .cs-picture {
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+    #stats-1687 .cs-picture-headshot {
     /* sends it to the right in the 2nd position */
     order: 2;
   }
