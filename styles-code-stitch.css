@@ -1338,6 +1338,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    border: 4px solid #555;
   }
   #RPsbs-1593 .cs-picture1,
   #RPsbsr-1593 .cs-picture1 {
